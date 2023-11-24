@@ -8,8 +8,10 @@ const Layout: React.FC<IProps> = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
-      <footer>This is footer thing</footer>
+      <main className="px-4 md:container">{children}</main>
+      <footer className="mt-auto px-4 md:container py-4">
+        This is footer thing
+      </footer>
     </>
   );
 };
